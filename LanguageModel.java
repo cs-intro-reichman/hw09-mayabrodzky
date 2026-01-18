@@ -100,7 +100,7 @@ public class LanguageModel {
 	 */
 	public String generate(String initialText, int textLength) {
 		// Your code goes here
-        if (initialText.length() < windowLength) {
+        if (initialText.length() <= windowLength) {
             return initialText;
         }
 
